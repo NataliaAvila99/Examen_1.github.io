@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Libroteca</title>
+</head>
+<body>
+    <header>
+        <div class="titulo"> <!--En esta seccion se encuentra el titulo, logo y incio de sesión y registro de la página-->
+        <h1>Libroteca </h1>
+        <img src="imagenes/logo.png" alt="logo" class="img1">
+        <button id="iniciarSesion" class="boton1">Inicio de Sesión</button>
+        <button class="boton2">Registro</button>
+        </div>
+        <nav>
+            <ul class="seleccion"><!--Aqui se encuentra las imagenes y sus titulos en una lista-->
+                <li><img src="imagenes/libro.png" alt="libro"> Elige tu libro</li>
+                <li> <img src="imagenes/check.png" alt="check"> Revisa disponibilidad</li>
+                <li> <img src="imagenes/separalo.png" alt="separalo"> Sepáralo</li>
+                <li> <img src="imagenes/shipping.png" alt="shipping"> Recíbelo</li>
+            </ul>
+        </nav>
+        <nav>
+            <ul class="genero"><!--Generos realizados con listas y con su onclick para cambiar género más adelante-->
+                <li onclick="cargarGenero(this)">Ficción</li>
+                <li onclick="cargarGenero(this)">Históricos</li>
+                <li onclick="cargarGenero(this)">Tecnología</li>
+                <li onclick="cargarGenero(this)">Autoayuda</li>
+                <li onclick="cargarGenero(this)">Poesía</li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <div class="cambioDeGenero"><!--Seccion de libros con sus respectivos titulos, autor y boton de rentar, cada imagen separada con div y su contenido con clases-->
+        <h2 id="todosLosLibros">Todos Los Libros</h2>
+        </div>
+        <div class="container">
+            <div class="libro">
+                <img src="imagenes/cien.jpg" alt="cien">
+                <p>Cien Años de Soledad</p>
+                <h3 class="autor">Gabriel García Márquez</h3>
+                <button id="botonUno">Rentar</button>
+            </div>
+
+            <div class="libro">
+                <img src="imagenes/rayuela.jpg" alt="rayuela">
+                <div class="a2">
+                <p>Rayuela</p>
+                <h3 class="autor">Julio Cortázar</h3>
+                <button id="botonDos" class="b2">Rentar</button>
+                </div>
+            </div>
+
+            <div class="libro">
+                <img src="imagenes/travesuras.jpg" alt="travesuras">
+                <div class="a3">
+                <p>Travesuras de la niña mala</p>
+                <h3 class="autor">Mario Vargas Llosa</h3>
+                <button id="botonTres" class="b3">Rentar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer><!--Parte inferior de la pagina con un aviso-->
+        <div class="derechosReservados">
+        <p>Todos los derechos reservados.Libroteca</p>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>

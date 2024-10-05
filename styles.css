@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+} /* saca el margin y el padding de la pagina*/
+
+.titulo {/*caja de lo que contiene el titulo, con su color*/
+    display: flex;
+    background-color: rgba(196, 193, 193, 0.2);
+    border-bottom:2px solid rgb(233, 230, 230);
+    height: 70px;
+    width: 100%;
+}
+
+.boton1{/*Boton de inicio de sesion*/
+    background-color: rgb(59, 89, 152);
+    margin: 20px 10px 20px 0px;
+    padding: 0px 15px 0px 15px;
+    font-family: sans-serif;
+    color: white;
+    border: none;
+    margin-left: 1400px;
+}
+
+.boton2 {/*Boton de registro*/
+    background-color: rgb(161, 211, 228);
+    margin: 20px 0px 20px 0px;
+    padding: 0px 15px 0px 15px;
+    font-family: sans-serif;
+    color: white;
+    border: none;
+}
+
+h1{/*Titulo "Libroteca"*/
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-left: 30px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.img1 {/*medidas y margenes del logo principal de la página*/
+    height: 40px;
+    width: 45px;
+    margin:  15px 5px 15px 5px;
+}
+
+.seleccion{/*caja con sus medidas y margenes, contiene iconos y secciones*/
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    background-color: rgba(211, 211, 211, 0.2);
+    height: 100px;
+    width: 100%;
+}
+.seleccion > li{/*tamaño, medidas y tipografia de la sección de menu*/
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-top: 35px;
+    padding-right: 190px;
+    padding-left: 110px;
+}
+
+.genero { /*caja con su color y medida y que contiene los géneros de los libros*/
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    background-color:rgb(144, 196, 238);
+    height: 50px;
+    width: 100%;
+}
+
+.genero > li{/*caja con sus respectivas medidas, contiene una lista de generos*/
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-top: 15px;
+    padding-right: 220px;
+    padding-left: 0px;
+    cursor: pointer;
+}
+
+.cambioDeGenero{ /*caja que contiene el titulo "Todos los libros" con su correspondiente colo y medidas*/
+    display: flex;
+    background-color: rgba(109, 106, 106, 0.2);
+    height: 70px;
+    width: 100%;
+}
+
+h2 {/* Titulo de "Todos los libros"*/
+    font-family: sans-serif;
+    font-weight: bolder;
+    margin-top: 20px;
+    text-align: center;
+    margin-left: 43%;
+    font-size: 30px;
+}
+
+.container {/*esta caga contiene las tarjetas de los libros*/
+    display: flex;
+    justify-content: center;
+}
+
+.libro > img{/* medidas de las portadas de los libros*/
+    height: 410px;
+    width: 375px;
+}
+
+.libro {/* esta parte es una tarjeta por asi decirlo que contiene los 3 libros que se ven en pantalla, imagen, titulo, auto y boton.*/
+    background-color: rgba(109, 106, 106, 0.2);
+    height: 533px;
+    width: 375px;
+    margin-top: 50px;
+    padding:20px;
+    margin-left: 60px;
+    margin-right: 100px;
+}
+
+.libro > h3{ /*nombre del Autor del primer libro */
+    padding-top: 2px;
+    font-family: sans-serif;
+    padding-left: 70px;
+}
+
+.libro > p {/*nombre del primer libro*/
+    margin-top: 20px;
+    font-family: sans-serif;
+    padding-left: 100px;
+}
+
+.a2 > h3{/*Nombre del Autor del segundo libro*/
+    padding-top: 2px;
+    font-family: sans-serif;
+    padding-left: 125px;
+}
+
+.a2 > p {/*nombre del segundo libro*/
+    margin-top: 20px;
+    font-family: sans-serif;
+    padding-left: 156px;
+}
+
+.a3 > h3{/*Nombre del Autor del tercer libro*/
+    padding-top: 2px;
+    font-family: sans-serif;
+    padding-left: 100px;
+}
+
+.a3 > p {/*Nombre del tercer libro*/
+    margin-top: 20px;
+    font-family: sans-serif;
+    padding-left: 90px;
+}
+
+.libro > button {/* Boton de renta del primer libro*/
+    margin-top: 20px;
+    font-family: sans-serif;
+    margin-left: 150px;
+    background-color: rgb(144, 196, 238);
+    color: black;
+    border: none;
+    padding: 5px 10px 5px 10px;
+    font-weight: bold;
+}
+
+.b2 {/*boton de renta del segundo libro*/
+    margin-top: 20px;
+    font-family: sans-serif;
+    margin-left: 162px;
+    background-color: rgb(144, 196, 238);
+    color: black;
+    border: none;
+    padding: 5px 10px 5px 10px;
+    font-weight: bold;
+}
+
+.b3{/* boton de renta del tercer libro*/
+    margin-top: 20px;
+    font-family: sans-serif;
+    margin-left: 162px;
+    background-color: rgb(144, 196, 238);
+    color: black;
+    border: none;
+    padding: 5px 10px 5px 10px;
+    font-weight: bold;
+}
+
+footer > div { /*caja que contiene la parte inferior de la pagina, que contiene un texto de derechos de autor*/
+    background-color: rgb(59, 89, 152);
+    color: white;
+    display: flex;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    gap: 15px;
+    font-family: sans-serif;
+}
+
+
+
